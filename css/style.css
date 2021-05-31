@@ -206,6 +206,7 @@ nav {
   border-radius: 8px;
 }
 
+<<<<<<< HEAD
 footer {
   width: 100%;
   background-color: #464646;
@@ -229,6 +230,9 @@ footer div.credits {
 }
 
 @media (max-width: 400px) {
+=======
+@media (max-width: 500px) {
+>>>>>>> aeaf0125ac2884e19964c648d36453ceb7ff33be
   nav {
     width: 100%;
     height: auto;
