@@ -10,8 +10,8 @@ body {
 nav {
   width: 100%;
   height: auto;
-  padding-top: 0.8%;
-  padding-bottom: 0.5%;
+  padding-top: 0.9%;
+  padding-bottom: 0.9%;
   display: flex;
   flex-direction: row;
   background-color: #464646;
@@ -25,7 +25,7 @@ nav {
 }
 
 #logo {
-  width: 60%;
+  width: 50%;
   margin-left: 10%;
 }
 #logo img {
@@ -34,16 +34,23 @@ nav {
 }
 
 #nav-links {
-  width: 40%;
+  width: 50%;
   margin-right: 10%;
   display: flex;
   flex-direction: row;
 }
+
 #nav-links div {
   width: 25%;
-  text-align: center;
+  text-align: right;
 }
-
+#nav-links a:link {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+#nav-links a:active {
+  text-decoration: underline;
+}
 #main {
   display: flex;
   padding: 0 10%;
@@ -51,7 +58,6 @@ nav {
   background-image: url("../images/bg-1.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  /* border-bottom: solid #464646; */
 }
 #main div {
   width: 50%;
@@ -64,7 +70,8 @@ nav {
   line-height: 1.5em;
 }
 #hero {
-  padding-top: 10%;
+  padding-top: 5%;
+  border-left: #464646;
 }
 .hero-img {
   width: 100%;
@@ -77,16 +84,16 @@ nav {
   /* margin-top: 20%; */
 }
 .team-icons div {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .team-icons img {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
 }
 .team-icons img:hover {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 }
 #right-arrow {
@@ -101,10 +108,10 @@ nav {
   background-image: url("../images/bg-2.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  /* border-bottom: solid #464646; */
 }
 #about {
   width: 60%;
+  padding-top: 8%;
   text-align: justify;
   height: auto;
 }
@@ -112,15 +119,18 @@ nav {
   text-align: center;
 }
 #about p {
-  margin-top: 10%;
+  margin-top: 2%;
 }
 #section-3 {
-  margin-top: 10%;
+  /* margin-top: 3%; */
   display: flex;
-  padding: 0 10%;
+  padding: 5% 10%;
   flex-direction: column;
 }
-
+#section-3 h2 {
+  text-align: center;
+  margin-bottom: 5%;
+}
 .sub {
   display: flex;
   flex-direction: row;
@@ -194,6 +204,28 @@ nav {
   color: #ffffff;
   border: none;
   border-radius: 8px;
+}
+
+footer {
+  width: 100%;
+  background-color: #464646;
+  color: #f5f5f5;
+  height: auto;
+  padding: 1% 0;
+  display: flex;
+}
+footer a {
+  color: #6dafc6;
+}
+footer div {
+  width: 50%;
+  text-align: center;
+}
+footer div.copyright {
+  margin-left: 10%;
+}
+footer div.credits {
+  margin-right: 10%;
 }
 
 @media (max-width: 400px) {
