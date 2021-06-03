@@ -125,9 +125,8 @@ main {
   height: 24px;
 }
 #section-2 {
-  height: 60vh;
+  height: 70vh;
   display: flex;
-  padding-top: 8%;
   padding-left: 40%;
   background-image: url("../images/bg-2.png");
   background-size: 100%;
@@ -135,8 +134,9 @@ main {
 }
 #about {
   width: 60%;
+  padding-top: 10%;
   text-align: justify;
-  height: auto;
+  height: 100%;
 }
 #about h2 {
   text-align: center;
