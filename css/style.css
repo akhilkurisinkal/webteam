@@ -5,6 +5,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
+  color: #24303f;
 }
 nav {
   width: 100%;
@@ -14,7 +15,7 @@ nav {
   display: flex;
   flex-direction: row;
   background-color: #24303f;
-  color: #f5f5f5;
+  color: #e8e9e9;
   font-size: 18px;
   position: fixed;
   top: 0;
@@ -52,7 +53,7 @@ h1 {
   display: none;
 }
 #nav-links a {
-  color: #f5f5f5;
+  color: #e8e9e9;
   text-decoration: none;
 }
 #nav-links a:active {
@@ -87,7 +88,7 @@ main {
   padding-top: 10%;
   font-size: 2.5em;
   font-weight: 800;
-  color: #464646;
+  color: #24303f;
   line-height: 1.5em;
 }
 #web-text {
@@ -147,6 +148,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: 5% 10%;
+  color: #24303f;
 }
 #section-3 h2 {
   text-align: center;
@@ -184,7 +186,7 @@ main {
 .chat-box .rectangle {
   width: 100%;
   height: auto;
-  background-color: #f5f5f5;
+  background-color: #e8e9e9;
   border-radius: 10px;
   padding: 3%;
 }
@@ -192,7 +194,7 @@ main {
   margin-top: 5%;
 }
 .chat-box .rectangle h4 {
-  color: #7dc6a8;
+  color: #41ae6b;
 }
 .chat-box .triangle {
   color: white;
@@ -200,7 +202,7 @@ main {
   height: 0px;
   border: 30px solid black;
   border-top-color: transparent;
-  border-right-color: #f5f5f5;
+  border-right-color: #e8e9e9;
   border-bottom-color: transparent;
   border-left-color: transparent;
   margin-top: 15px;
@@ -213,14 +215,14 @@ main {
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
-  border-left-color: #f5f5f5;
+  border-left-color: #e8e9e9;
   margin-top: 15px;
 }
 .chat-box .about-btn {
   margin-top: 3%;
   width: 150px;
   height: 40px;
-  background-color: #6dafc6;
+  background-color: #649474;
   color: #ffffff;
   border: none;
   border-radius: 8px;
