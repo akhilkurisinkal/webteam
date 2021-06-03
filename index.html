@@ -4,138 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    
-    <title>W4</title>
+    <title>Canvas</title>
 </head>
 <body>
-    <!--header-->
     <header>
         <nav>
-            <div id="logo">
-               <img src="images/logo.png"/>
-               <img id="menu"src="images/hamburg.png" style="width: 30px;height:30px"/>
-            </div>
-            <div id="nav-links">
-                <div><a href="index.html">Home</a></div>
-                <div><a href="#about">About</a></div>
-                <div><a href="#section-3">Team</a></div>
-                <div><a href="#contact">Contact</a></div>
-            </div>  
+            <section id="logo">
+                <img src="images/logo.png"/>
+                <h1>FOUR LEAVES</h1>
+            </section>
+            <section id="nav-links">
+                <ul id="nav-list">
+                    <li class="nav-link"><a href="index.html">Home</a></li>
+                    <li class="nav-link"><a href="#about">About</a></li>
+                    <li class="nav-link"><a href="#Team">Work</a></li>
+                    <li class="nav-link"><a href="#contact">Contact</a></li>
+                </ul>
+            </section>  
         </nav>
     </header>
-    <!--header end-->
-
-    <section id="main">
-        <div id="hero-text">
-            <p>We do make people's lives simpler with the power of <span style="color:#7DC6A8">web</span>.</p>
-            <!--team members photos-->
-            <p style="font-size: 18px;margin-top:5%;">Meet Our Team</p>
-            <div class="team-icons">
-                <div><img src="images/sm-reshmi.jpg"/></div>
-                <div><img src="images/sm-sree.jpg"/></div>
-                <div><img src="images/sm-stevan.jpg"/></div>
-                <div><img src="images/sm-akhil.jpg"/></div>
-                <div><a href="#section-3"><img id="right-arrow" src="images/right-arrow.jpg"/></a></div>
+    <main>
+        <section id="section-1">
+            <article>
+                <section id="hero-text">
+                    <p>We do make people's life simpler with the power of <span id="web-text">web</span>.</p>
+                    <p id="meet-text">Meet Our Team</p>
+                    <section class="team-icons">
+                        <div><img src="images/sm-reshmi.jpg"/></div>
+                        <div><img src="images/sm-sree.jpg"/></div>
+                        <div><img src="images/sm-stevan.jpg"/></div>
+                        <div><img src="images/sm-akhil.jpg"/></div>
+                        <div><a href="#section-3"><img id="right-arrow" src="images/right-arrow.jpg"/></a></div>
+                    </section>
+                </section>
+                <section id="hero">
+                    <img class="hero-img" src="images/newbg.png"/>
+                </section>
+            </article>
+        </section>
+        <section id="section-2">
+            <article id="about">
+                <div class="top-line"></div>
+                <h2>About Us</h2>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a 
+                    piece of classical Latin literature from 45 BC, making it over 2000 years old. Rich
+                    ard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up o
+                    ne of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and goi
+                    ng through the cites of the word in classical literature, discovered the undoubtable 
+                    source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et 
+                    Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a 
+                    reatise on the theory of ethics, very popular during the Renaissance. The first line of 
+                    Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </p> 
+            </article>     
+        </section>
+        <section id="section-3">
+            <div id="team">
+                <div class="top-line"></div>
+                <h2>Our Team</h2>
             </div>
-            <!--team members photos end-->
-        </div>
-        <div id="hero">
-            <img class="hero-img" src="images/2.png"/>
-        </div>
-    </section>
-
-    <!--section 2 about us-->
-    <section id="section-2">
-        <div id="about">
-            <div style="width: 100px; height:7px;background-color:#7DC6A8;margin:auto;border-radius:10px;"></div>
-            <h2>About Us</h2>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a 
-                piece of classical Latin literature from 45 BC, making it over 2000 years old. Rich
-                ard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up o
-                ne of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and goi
-                ng through the cites of the word in classical literature, discovered the undoubtable 
-                source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et 
-                Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a 
-                reatise on the theory of ethics, very popular during the Renaissance. The first line of 
-                Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-            </p> 
-        </div>     
-    </section>
-    <!--section 2 ends-->
-
-    <!--section 3 members details-->
-    <section id="section-3">
-        <div id="team">
-            <div style="width: 100px; height:7px;background-color:#7DC6A8;margin:auto;border-radius:10px;"></div>
-            <h2>Our Team Members</h2>
-        </div>
-        <div class="sub">
-            <div class="photo"><img src="images/md-reshmi.jpg"/></div>
-            <div class="chat-box">
-                <div class="triangle"></div>
-                <div class="rectangle">
-                    <h4>@Reshmi</h4>
-                    <p>Hi, I am Reshmi, Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a 
-                        reatise on the theory of ethics, very popular during the Renaissance. The first line of 
-                        Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                    <button class="about-btn">About Me</button>
+            <article class="sub">
+                <section class="photo"><img src="images/md-reshmi.jpg"/></section>
+                <div class="chat-box">
+                    <div class="triangle"></div>
+                    <div class="rectangle">
+                        <h4>@Reshmi</h4>
+                        <p>Hi, I am Reshmi, Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a 
+                            reatise on the theory of ethics, very popular during the Renaissance. The first line of 
+                            Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                        <button class="about-btn">About Me</button>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="sub-2">
-            <div class="photo"><img src="images/md-sree.jpg"/></div>
-            <div class="chat-box">
-                <div class="rectangle">
-                    <h4>@Sree Lakshmy Abhilash</h4>
-                    <p>Hi, I am Sree Lakshmy, Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a 
-                        reatise on the theory of ethics, very popular during the Renaissance. The first line of 
-                        Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                    <button class="about-btn">About Me</button>
-                </div>
-                <div class="triangle-2"></div>    
-            </div>
-        </div>
-        <div class="sub">
-            <div class="photo"><img src="images/md-stevan.jpg"/></div>
-            <div class="chat-box">
-                <div class="triangle"></div>
-                <div class="rectangle">
-                    <h4>@Stevan</h4>
-                    <p>Hi, I am Stevan, Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a 
-                        reatise on the theory of ethics, very popular during the Renaissance. The first line of 
-                        Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                    <button class="about-btn">About Me</button>
-                </div>
-            </div>
-        </div>
-        <div class="sub-2">
-            <div class="photo"><img src="images/md-akhil.jpg"/></div>
-            <div class="chat-box">
-                <div class="rectangle">
-                    <h4>@Akhil Kurisinkal Thomas</h4>
-                    <p>Hi, I am Akhil, Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a 
-                        reatise on the theory of ethics, very popular during the Renaissance. The first line of 
-                        Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                    <button class="about-btn">About Me</button>
-                </div>
-                <div class="triangle-2"></div>
-            </div>
-        </div>
-    </section>
-    <!--section 3 ends-->
-
-
+            </article>
+            <article class="sub-2">
+                <section class="photo"><img src="images/md-sree.jpg"/></section>
+                <section class="chat-box">
+                    <div class="rectangle">
+                        <h4>@Sree Lakshmy Abhilash</h4>
+                        <p>Hi, I am Sree Lakshmy, Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a 
+                            reatise on the theory of ethics, very popular during the Renaissance. The first line of 
+                            Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                        <button class="about-btn">About Me</button>
+                    </div>
+                    <div class="triangle-2"></div>    
+                </section>
+            </article>
+            <article class="sub">
+                <section class="photo"><img src="images/md-stevan.jpg"/></section>
+                <section class="chat-box">
+                    <div class="triangle"></div>
+                    <div class="rectangle">
+                        <h4>@Stevan</h4>
+                        <p>Hi, I am Stevan, Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a 
+                            reatise on the theory of ethics, very popular during the Renaissance. The first line of 
+                            Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                        <button class="about-btn">About Me</button>
+                    </div>
+                </section>
+            </article>
+            <article class="sub-2">
+                <section class="photo"><img src="images/md-akhil.jpg"/></section>
+                <section class="chat-box">
+                    <div class="rectangle">
+                        <h4>@Akhil Kurisinkal Thomas</h4>
+                        <p>Hi, I am Akhil, Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a 
+                            reatise on the theory of ethics, very popular during the Renaissance. The first line of 
+                            Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                        <button class="about-btn">About Me</button>
+                    </div>
+                    <div class="triangle-2"></div>
+                </section>
+            </article>
+        </section>
+    </main>
 <footer>
-    <div class="copyright">
+    <section class="copyright">
         &#169; 2021 Designed & Developed By Team Canvas
-    </div>
-    <div class="credits">
+    </section>
+    <section class="credits">
         Vector Designed By <a href="http://www.freepik.com">Freepik</a>
-    </div>
-</footer>
-    
-    
+    </section>
+</footer>  
 </body>
 </html>

@@ -3,10 +3,9 @@
   margin: 0;
 }
 body {
-  position: relative;
   font-family: "Open Sans", sans-serif;
+  font-size: 18px;
 }
-/*navigation bar*/
 nav {
   width: 100%;
   height: auto;
@@ -14,74 +13,98 @@ nav {
   padding-bottom: 0.9%;
   display: flex;
   flex-direction: row;
-  background-color: #464646;
+  background-color: #24303f;
   color: #f5f5f5;
   font-size: 18px;
   position: fixed;
   top: 0;
 }
-#menu {
-  display: none;
-}
-
-#logo {
+nav section {
   width: 50%;
+}
+#logo {
   margin-left: 10%;
+  display: flex;
 }
 #logo img {
   width: 30px;
   height: 30px;
 }
-
+h1 {
+  display: inline;
+  margin-left: 10px;
+}
 #nav-links {
-  width: 50%;
   margin-right: 10%;
   display: flex;
   flex-direction: row;
 }
-
-#nav-links div {
+#nav-links ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+}
+#nav-links ul li {
   width: 25%;
   text-align: right;
 }
-#nav-links a:link {
+#menu {
+  display: none;
+}
+#nav-links a {
   color: #f5f5f5;
   text-decoration: none;
 }
 #nav-links a:active {
   text-decoration: underline;
 }
-#main {
+#nav-links a:hover {
+  text-decoration: underline;
+}
+main {
+  width: 100%;
+  height: auto;
+}
+#section-1 {
+  width: 80%;
   display: flex;
   padding: 0 10%;
   height: 70vh;
   background-image: url("../images/bg-1.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  /* flex-wrap: wrap; */
 }
-#main div {
+#section-1 article {
+  width: 100%;
+  padding-top: 5%;
+  display: flex;
+}
+#section-1 article section {
   width: 50%;
 }
 #hero-text {
-  padding-top: 15%;
+  padding-top: 10%;
   font-size: 2.5em;
   font-weight: 800;
   color: #464646;
   line-height: 1.5em;
 }
-#hero {
-  padding-top: 5%;
-  border-left: #464646;
+#web-text {
+  color: #41ae6b;
+}
+#meet-text {
+  font-size: 18px;
+  margin-top: 5%;
 }
 .hero-img {
   width: 100%;
   height: auto;
-  margin-top: 5%;
+  padding-top: 15%;
 }
 .team-icons {
   display: flex;
   flex-direction: row;
-  /* margin-top: 20%; */
 }
 .team-icons div {
   margin-right: 20px;
@@ -103,7 +126,7 @@ nav {
 #section-2 {
   height: 60vh;
   display: flex;
-  padding-top: 5%;
+  padding-top: 8%;
   padding-left: 40%;
   background-image: url("../images/bg-2.png");
   background-size: 100%;
@@ -111,7 +134,6 @@ nav {
 }
 #about {
   width: 60%;
-  padding-top: 8%;
   text-align: justify;
   height: auto;
 }
@@ -122,58 +144,57 @@ nav {
   margin-top: 2%;
 }
 #section-3 {
-  /* margin-top: 3%; */
   display: flex;
-  padding: 5% 10%;
   flex-direction: column;
+  padding: 5% 10%;
 }
 #section-3 h2 {
   text-align: center;
   margin-bottom: 5%;
 }
-.sub {
+#team {
+  margin-bottom: 10px;
+}
+#section-3 article.sub {
   display: flex;
   flex-direction: row;
   height: auto;
   margin-bottom: 10vh;
 }
-
-.sub-2 {
+#section-3 article.sub-2 {
   display: flex;
   flex-direction: row-reverse;
   height: auto;
   margin-bottom: 10vh;
 }
-.photo {
+#section-3 article.photo {
   width: 10%;
   text-align: center;
 }
-.photo img {
+#section-3 .photo img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
-.chat-box {
+#section-3 article .chat-box {
   width: 50%;
   display: flex;
   flex-direction: row;
 }
-.rectangle {
+.chat-box .rectangle {
   width: 100%;
   height: auto;
   background-color: #f5f5f5;
   border-radius: 10px;
   padding: 3%;
-  /* border-top-left-radius: 0; */
 }
-.rectangle p {
+.chat-box .rectangle p {
   margin-top: 5%;
 }
-.rectangle h4 {
+.chat-box .rectangle h4 {
   color: #7dc6a8;
 }
-
-.triangle {
+.chat-box .triangle {
   color: white;
   width: 0px;
   height: 0px;
@@ -184,8 +205,7 @@ nav {
   border-left-color: transparent;
   margin-top: 15px;
 }
-
-.triangle-2 {
+.chat-box .triangle-2 {
   color: white;
   width: 0px;
   height: 0px;
@@ -196,7 +216,7 @@ nav {
   border-left-color: #f5f5f5;
   margin-top: 15px;
 }
-.about-btn {
+.chat-box .about-btn {
   margin-top: 3%;
   width: 150px;
   height: 40px;
@@ -205,8 +225,6 @@ nav {
   border: none;
   border-radius: 8px;
 }
-
-<<<<<<< HEAD
 footer {
   width: 100%;
   background-color: #464646;
@@ -218,21 +236,25 @@ footer {
 footer a {
   color: #6dafc6;
 }
-footer div {
+footer section {
   width: 50%;
   text-align: center;
 }
-footer div.copyright {
+footer section.copyright {
   margin-left: 10%;
 }
-footer div.credits {
+footer section.credits {
   margin-right: 10%;
+}
+.top-line {
+  width: 120px;
+  height: 5px;
+  margin: auto;
+  background-color: #41ae6b;
+  border-radius: 5px;
 }
 
 @media (max-width: 400px) {
-=======
-@media (max-width: 500px) {
->>>>>>> aeaf0125ac2884e19964c648d36453ceb7ff33be
   nav {
     width: 100%;
     height: auto;
